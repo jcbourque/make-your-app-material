@@ -4,7 +4,7 @@ buildscript {
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.3.2'
+        classpath 'com.android.tools.build:gradle:3.4.0'
     }
 }
 apply plugin: 'com.android.application'
@@ -23,14 +23,18 @@ android {
     }
 }
 
+ext {
+    supportVersion = '1.0.0'
+}
+
 dependencies {
-    implementation "androidx.legacy:legacy-support-v4:$androidSupportVersion"
-    implementation "androidx.legacy:legacy-support-v13:$androidSupportVersion"
+    implementation "androidx.legacy:legacy-support-v4:$supportVersion"
+    implementation "androidx.legacy:legacy-support-v13:$supportVersion"
     implementation "androidx.appcompat:appcompat:1.0.2"
-    implementation "androidx.palette:palette:$androidSupportVersion"
-    implementation "androidx.recyclerview:recyclerview:$androidSupportVersion"
-    implementation "androidx.cardview:cardview:$androidSupportVersion"
+    implementation "androidx.palette:palette:$supportVersion"
+    implementation "androidx.recyclerview:recyclerview:1.1.0-alpha04"
+    implementation "androidx.cardview:cardview:$supportVersion"
+    implementation "com.google.android.material:material:1.1.0-alpha05"
     implementation 'com.squareup.okhttp3:okhttp:3.12.1'
     implementation files('libs/volley.jar')
-    implementation 'com.android.support:appcompat-v7:28.0.3'
 }
