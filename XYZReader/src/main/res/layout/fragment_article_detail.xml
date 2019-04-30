@@ -77,7 +77,6 @@
                     android:layout_marginLeft="@dimen/detail_inner_horizontal_margin"
                     android:layout_marginRight="@dimen/detail_inner_horizontal_margin"
                     android:paddingBottom="@dimen/detail_body_bottom_margin"
-                    android:textColorLink="@color/primaryDarkColor"
                     android:textSize="@dimen/detail_body_text_size"
                     android:lineSpacingMultiplier="@fraction/detail_body_line_spacing_multiplier" />
 
@@ -85,7 +84,8 @@
         </FrameLayout>
     </com.example.xyzreader.ui.ObservableScrollView>
 
-    <ImageButton android:id="@+id/share_fab"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/share_fab"
         android:stateListAnimator="@anim/fab_state_list_anim"
         android:background="@drawable/add_fab_background"
         android:layout_gravity="bottom|end"

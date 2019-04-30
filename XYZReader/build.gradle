@@ -32,9 +32,9 @@ dependencies {
     implementation "androidx.legacy:legacy-support-v13:$supportVersion"
     implementation "androidx.appcompat:appcompat:1.0.2"
     implementation "androidx.palette:palette:$supportVersion"
-    implementation "androidx.recyclerview:recyclerview:1.1.0-alpha04"
+    implementation "androidx.recyclerview:recyclerview:$supportVersion"
     implementation "androidx.cardview:cardview:$supportVersion"
-    implementation "com.google.android.material:material:1.1.0-alpha05"
+    implementation "com.google.android.material:material:$supportVersion"
     implementation 'com.squareup.okhttp3:okhttp:3.12.1'
     implementation files('libs/volley.jar')
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
